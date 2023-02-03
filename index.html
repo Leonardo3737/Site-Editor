@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site Editor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="sideBar">
+            <h2>Editor</h2>
+            <nav id="nav">
+                <div id="divAddBox">
+                    <li id="addBox">ADICIONAR BLOCO</li>
+                    <div id="divConfig" style="display: none;">
+                        <label for="altura">Altura</label>
+                        <input type="text" id="altura" size="7">
+                        <label for="largura">Largura</label>
+                        <input type="text" id="largura" size="7">
+                        <br>
+                        <label for="cor">Cor</label>
+                        <input type="color" id="cor">
+                        <br>
+                        <button id="creatTag" type="button">OK</button>
+                        <button id="cancelTag" type="button">CANCELAR</button>
+                    </div>
+                    <div id="configPosition" style="display: none;">
+                        <label for="posicaoX">Posição do eixo X</label>
+                        <input type="text" id="posicaoX" size="7">
+                        <label for="posicaoy">Posição do eixo Y</label>
+                        <input type="text" id="posicaoY" size="7">
+                        <br>
+                        <button type="button" id="block"> OK</button>
+                    </div>
+                </div>
+                <div>
+                    <li id="addText">ADICIONAR TEXTO</li>
+                </div>
+            </nav>
+        </div>
+        <div id="visor">
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
